@@ -1,0 +1,10 @@
+# create file /etc/systemd/system/mytask.service to create systemctl
+
+[Unit]
+Description=My custom startup task
+
+[Service]
+ExecStart=/opt/script.sh
+
+[Install]
+WantedBy=multi-user.target
